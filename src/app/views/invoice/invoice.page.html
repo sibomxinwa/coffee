@@ -1,0 +1,21 @@
+<ion-app>
+    <ion-header translucent>
+        <ion-toolbar>
+            <ion-title>Invoice</ion-title>
+        </ion-toolbar>
+    </ion-header>,
+    <ion-content fullscreen>
+        <ion-card>
+            <img src="/assets/images/Coffee-1-Shutterstock.jpg" />
+            <ion-card-header>
+                <ion-card-title>Reference No: {{referencenumber}}</ion-card-title>
+                <ion-card-title>Items: {{quantity}}</ion-card-title>
+                <ion-card-title>Cup Syle: {{cupstyle}}</ion-card-title>
+                <ion-card-title>Milk: {{milk}}</ion-card-title>
+                <ion-card-title>Total Price: R{{quantity*price}}</ion-card-title>
+                <ion-card-title>Date: {{time}}</ion-card-title>
+            </ion-card-header>
+        </ion-card>
+        <ion-button expand="full" color="primary" (click)="Order()">Print</ion-button>
+    </ion-content>
+</ion-app>

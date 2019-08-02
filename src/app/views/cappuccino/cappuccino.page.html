@@ -1,0 +1,90 @@
+<!-- <ion-app>
+    <ion-header>
+        <ion-toolbar color="primary">
+            <ion-title>Cappuccino</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content fullscreen>
+        <ion-card [(ngModel)]="selectitems">
+            <img src="/assets/images/Coffee-1-Shutterstock.jpg" />
+            <ion-item>
+                <ion-label position="floating" color="primary">Enter your reference number</ion-label>
+                <ion-input color="primary" [(ngModel)]="referencenumber"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>Quantity</ion-label>
+                <ion-select>
+                    <ion-select-option value="q1">1</ion-select-option>
+                    <ion-select-option value="q2">2</ion-select-option>
+                </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-label>Pick up time</ion-label>
+                <ion-datetime display-format="h:mm A" picker-format="h:mm A" value="1990-02-19T07:43Z"></ion-datetime>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Cup Style</ion-label>
+                <ion-select>
+                    <ion-select-option value="cup">Cup</ion-select-option>
+                    <ion-select-option value="mug">Mug</ion-select-option>
+                    <ion-select-option value="takeaway">Take Away</ion-select-option>
+                </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-label>Milk</ion-label>
+                <ion-select>
+                    <ion-select-option value="fullcream">Full Scream</ion-select-option>
+                    <ion-select-option value="skim">Skim</ion-select-option>
+                    <ion-select-option value="soy">Soy</ion-select-option>
+                    <ion-select-option value="almond">Almond</ion-select-option>
+                    <ion-select-option value="lactosefree">Lactose Free</ion-select-option>
+                </ion-select>
+            </ion-item>
+        </ion-card>
+        <ion-button expand="full" color="primary" (click)="Order()">Order</ion-button>
+    </ion-content>
+</ion-app> -->
+<ion-app>
+    <ion-header>
+        <ion-toolbar color="primary">
+            <ion-title>Cappuccino</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content fullscreen>
+        <ion-card>
+            <img src="/assets/images/Coffee-1-Shutterstock.jpg" />
+            <ion-card-header>
+                <ion-card-title>R25.00</ion-card-title>
+            </ion-card-header>
+            <ion-item>
+                <ion-label>Quantity</ion-label>
+                <ion-select [(ngModel)]="quantity">
+                    <ion-select-option value="1">1</ion-select-option>
+                    <ion-select-option value="2">2</ion-select-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Cup Style</ion-label>
+                <ion-select [(ngModel)]="cupstyle">
+                    <ion-select-option value="cup">Cup</ion-select-option>
+                    <ion-select-option value="mug">Mug</ion-select-option>
+                    <ion-select-option value="takeaway">Take Away</ion-select-option>
+                </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-label>Milk</ion-label>
+                <ion-select [(ngModel)]="milk">
+                    <ion-select-option value="fullcream">Full Scream</ion-select-option>
+                    <ion-select-option value="skim">Skim</ion-select-option>
+                    <ion-select-option value="soy">Soy</ion-select-option>
+                    <ion-select-option value="almond">Almond</ion-select-option>
+                    <ion-select-option value="lactosefree">Lactose Free</ion-select-option>
+                </ion-select>
+            </ion-item>
+        </ion-card>
+        <br>
+        <ion-button expand="full" color="primary" (click)="Order()">Order</ion-button>
+    </ion-content>
+</ion-app>

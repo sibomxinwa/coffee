@@ -1,0 +1,79 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Menu</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<!-- <ion-content>
+    <ion-list>
+        <br>
+        <ion-radio-group [(ngModel)]="select">
+            <ion-item>
+                <ion-label>Cappuccino</ion-label>
+                <ion-radio slot="end" color="primary" value="radiocappuccino"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Chai Latter</ion-label>
+                <ion-radio slot="end" color="primary" value="radiochailatter"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Espresso</ion-label>
+                <ion-radio slot="end" color="primary" value="radioexpresso"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Flat White</ion-label>
+                <ion-radio slot="end" color="primary" value="radioflatwhite"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Hot Chocolate</ion-label>
+                <ion-radio slot="end" color="primary" value="radiohotchocolate"></ion-radio>
+            </ion-item>
+        </ion-radio-group>
+        <br>
+        <br>
+        <br>
+        <ion-button class="start" expand="full" color="primary" (click)="Order()">Order</ion-button>
+    </ion-list>
+
+</ion-content> -->
+<ion-app>
+    <ion-header translucent>
+        <ion-toolbar color="primary">
+            <ion-title> Coffe Ordering App</ion-title>
+        </ion-toolbar>
+    </ion-header>,
+    <ion-content fullscreen>
+
+        <ion-card>
+            <img src="/assets/images/gala-coffee-offering-1.jpg" />
+
+            <ion-card-header>
+                <ion-card-title>Tea Time!!!</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+                It’s amazing how the world begins to change through the eyes of a cup of coffee.
+            </ion-card-content>
+        </ion-card>
+        <ion-radio-group [(ngModel)]="select">
+            <ion-item>
+                <ion-label>Cappuccino</ion-label>
+                <ion-radio slot="end" color="primary" value="radiocappuccino"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Chai Latter</ion-label>
+                <ion-radio slot="end" color="primary" value="radiochailatter"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Espresso</ion-label>
+                <ion-radio slot="end" color="primary" value="radioexpresso"></ion-radio>
+            </ion-item>
+        </ion-radio-group>
+        <ion-button expand="full" color="primary" (click)="Order()">Order</ion-button>
+    </ion-content>
+</ion-app>

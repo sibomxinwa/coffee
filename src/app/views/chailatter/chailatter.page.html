@@ -1,0 +1,43 @@
+<ion-app>
+    <ion-header>
+        <ion-toolbar color="primary">
+            <ion-title>Chailatter</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content fullscreen>
+        <ion-card>
+            <img src="/assets/images/photo-266174.jpeg" />
+            <ion-card-header>
+                <ion-card-title>R25.00</ion-card-title>
+            </ion-card-header>
+            <ion-item>
+                <ion-label>Quantity</ion-label>
+                <ion-select [(ngModel)]="quantity">
+                    <ion-select-option value="1">1</ion-select-option>
+                    <ion-select-option value="2">2</ion-select-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Cup Style</ion-label>
+                <ion-select [(ngModel)]="cupstyle">
+                    <ion-select-option value="cup">Cup</ion-select-option>
+                    <ion-select-option value="mug">Mug</ion-select-option>
+                    <ion-select-option value="takeaway">Take Away</ion-select-option>
+                </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-label>Milk</ion-label>
+                <ion-select [(ngModel)]="milk">
+                    <ion-select-option value="fullcream">Full Scream</ion-select-option>
+                    <ion-select-option value="skim">Skim</ion-select-option>
+                    <ion-select-option value="soy">Soy</ion-select-option>
+                    <ion-select-option value="almond">Almond</ion-select-option>
+                    <ion-select-option value="lactosefree">Lactose Free</ion-select-option>
+                </ion-select>
+            </ion-item>
+        </ion-card>
+        <br>
+        <ion-button expand="full" color="primary" (click)="Order()">Order</ion-button>
+    </ion-content>
+</ion-app>
